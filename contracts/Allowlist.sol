@@ -1,19 +1,17 @@
 pragma solidity ^0.5.0;
 
-contract WhitelistForm {
+contract Allowlist {
     // all are going to be set to uuid value in smart contract, so declare as same type
-	struct whitelister {
-		string uuid;
+	struct allowlister {
 		string f_name;
 		string l_name;
 		string wallet_address;
 	}
 
-	whitelister[] whitelisters; // array of all whitelisters
+	allowlister[] allowlisters; // array of all allowlisters
 
-	function _createWhitelister (string memory _uuid) public {
-		whitelisters.push(whitelister({
-			uuid: _uuid,
+	function _createAllowlister (string memory _uuid) public {
+		allowlisters.push(allowlister({
 			f_name: _uuid,
 			l_name: _uuid,
 			wallet_address: _uuid

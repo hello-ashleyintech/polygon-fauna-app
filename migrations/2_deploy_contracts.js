@@ -1,5 +1,5 @@
-const WhitelistForm = artifacts.require("./WhitelistForm.sol");
+const Allowlist = artifacts.require("./Allowlist.sol");
 
-module.exports = function(deployer) {
-  deployer.deploy(WhitelistForm);
+module.exports = function (deployer) {
+  deployer.deploy(Allowlist);
 };

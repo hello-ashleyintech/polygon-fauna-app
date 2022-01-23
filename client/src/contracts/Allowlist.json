@@ -1,5 +1,5 @@
 {
-  "contractName": "WhitelistForm",
+  "contractName": "Allowlist",
   "abi": [
     {
       "constant": false,
@@ -10,38 +10,31 @@
           "type": "string"
         }
       ],
-      "name": "_createWhitelister",
+      "name": "_createAllowlister",
       "outputs": [],
       "payable": false,
       "stateMutability": "nonpayable",
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"internalType\":\"string\",\"name\":\"_uuid\",\"type\":\"string\"}],\"name\":\"_createWhitelister\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/WhitelistForm.sol\":\"WhitelistForm\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/WhitelistForm.sol\":{\"keccak256\":\"0x7d671dfc469438b41906ccf1d89d3c14ee47c7238c84905c222ba05d79d3ed74\",\"urls\":[\"bzz-raw://f839bcce32d2c6e60458e3a0dd69736406271f7722bd45ec9cba054fe238036e\",\"dweb:/ipfs/QmUttXRG1GFj4DcfQ9NbDYWx5YYACJiGihcESJptecn5Yq\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b50610290806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c80635e80c93b14610030575b600080fd5b6100e96004803603602081101561004657600080fd5b810190808035906020019064010000000081111561006357600080fd5b82018360208201111561007557600080fd5b8035906020019184600183028401116401000000008311171561009757600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506100eb565b005b600160006040518060800160405280848152602001848152602001848152602001848152509080600181540180825580915050906001820390600052602060002090600402016000909192909190915060008201518160000190805190602001906101579291906101b6565b5060208201518160010190805190602001906101749291906101b6565b5060408201518160020190805190602001906101919291906101b6565b5060608201518160030190805190602001906101ae9291906101b6565b505050505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106101f757805160ff1916838001178555610225565b82800160010185558215610225579182015b82811115610224578251825591602001919060010190610209565b5b5090506102329190610236565b5090565b61025891905b8082111561025457600081600090555060010161023c565b5090565b9056fea265627a7a72315820fccf309485cf518433bb95052725a76ccd1d49256702091d2d7c8cd15b6bab2b64736f6c63430005100032",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c80635e80c93b14610030575b600080fd5b6100e96004803603602081101561004657600080fd5b810190808035906020019064010000000081111561006357600080fd5b82018360208201111561007557600080fd5b8035906020019184600183028401116401000000008311171561009757600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506100eb565b005b600160006040518060800160405280848152602001848152602001848152602001848152509080600181540180825580915050906001820390600052602060002090600402016000909192909190915060008201518160000190805190602001906101579291906101b6565b5060208201518160010190805190602001906101749291906101b6565b5060408201518160020190805190602001906101919291906101b6565b5060608201518160030190805190602001906101ae9291906101b6565b505050505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106101f757805160ff1916838001178555610225565b82800160010185558215610225579182015b82811115610224578251825591602001919060010190610209565b5b5090506102329190610236565b5090565b61025891905b8082111561025457600081600090555060010161023c565b5090565b9056fea265627a7a72315820fccf309485cf518433bb95052725a76ccd1d49256702091d2d7c8cd15b6bab2b64736f6c63430005100032",
-  "sourceMap": "25:457:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:457:0;;;;;;;",
-  "deployedSourceMap": "25:457:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:457:0;;;;;;;;;;;;;;;;;;;298:182;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;298:182:0;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;298:182:0;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;298:182:0;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;298:182:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;298:182:0;;;;;;;;;;;;;;;:::i;:::-;;;475:1;359:12;377:95;;;;;;;;400:5;377:95;;;;418:5;377:95;;;;436:5;377:95;;;;462:5;377:95;;;359:114;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;359:114:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;:117;;298:182;:::o;25:457::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
-  "source": "pragma solidity ^0.5.0;\n\ncontract WhitelistForm {\n    // all are going to be set to uuid value in smart contract, so declare as same type\n\tstruct whitelister {\n\t\tstring uuid;\n\t\tstring f_name;\n\t\tstring l_name;\n\t\tstring wallet_address;\n\t}\n\n\twhitelister[] whitelisters; // array of all whitelisters\n\n\tfunction _createWhitelister (string memory _uuid) public {\n\t\twhitelisters.push(whitelister({\n\t\t\tuuid: _uuid,\n\t\t\tf_name: _uuid,\n\t\t\tl_name: _uuid,\n\t\t\twallet_address: _uuid\n\t\t})) -1;\n\t}\n}",
-  "sourcePath": "/Users/ashleyhuynh/Documents/polygon-fauna-app/contracts/WhitelistForm.sol",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"internalType\":\"string\",\"name\":\"_uuid\",\"type\":\"string\"}],\"name\":\"_createAllowlister\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Allowlist.sol\":\"Allowlist\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Allowlist.sol\":{\"keccak256\":\"0x264635273033163850a0d243f789bbbf70e7b9ae6bf22739f2988a1eba476bd6\",\"urls\":[\"bzz-raw://a85a308f128285981054a92f2e07a401c67a9c7b8ab05b0e80df559e92e88168\",\"dweb:/ipfs/QmVDqKwwow2B1pfcJW81MJ23GXPdyfNoXT6pGVWC9hpu2k\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061026d806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c80630caa58e014610030575b600080fd5b6100e96004803603602081101561004657600080fd5b810190808035906020019064010000000081111561006357600080fd5b82018360208201111561007557600080fd5b8035906020019184600183028401116401000000008311171561009757600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506100eb565b005b60016000604051806060016040528084815260200184815260200184815250908060018154018082558091505090600182039060005260206000209060030201600090919290919091506000820151816000019080519060200190610151929190610193565b50602082015181600101908051906020019061016e929190610193565b50604082015181600201908051906020019061018b929190610193565b505050505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106101d457805160ff1916838001178555610202565b82800160010185558215610202579182015b828111156102015782518255916020019190600101906101e6565b5b50905061020f9190610213565b5090565b61023591905b80821115610231576000816000905550600101610219565b5090565b9056fea265627a7a72315820a4540e0893b1516aff6f17e04ab6573ca39026438974c9c42232dc527d2fd0ab64736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c80630caa58e014610030575b600080fd5b6100e96004803603602081101561004657600080fd5b810190808035906020019064010000000081111561006357600080fd5b82018360208201111561007557600080fd5b8035906020019184600183028401116401000000008311171561009757600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506100eb565b005b60016000604051806060016040528084815260200184815260200184815250908060018154018082558091505090600182039060005260206000209060030201600090919290919091506000820151816000019080519060200190610151929190610193565b50602082015181600101908051906020019061016e929190610193565b50604082015181600201908051906020019061018b929190610193565b505050505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106101d457805160ff1916838001178555610202565b82800160010185558215610202579182015b828111156102015782518255916020019190600101906101e6565b5b50905061020f9190610213565b5090565b61023591905b80821115610231576000816000905550600101610219565b5090565b9056fea265627a7a72315820a4540e0893b1516aff6f17e04ab6573ca39026438974c9c42232dc527d2fd0ab64736f6c63430005100032",
+  "sourceMap": "25:422:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:422:0;;;;;;;",
+  "deployedSourceMap": "25:422:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:422:0;;;;;;;;;;;;;;;;;;;279:166;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;279:166:0;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;279:166:0;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;279:166:0;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;279:166:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;279:166:0;;;;;;;;;;;;;;;:::i;:::-;;;440:1;340:12;358:79;;;;;;;;383:5;358:79;;;;401:5;358:79;;;;427:5;358:79;;;340:98;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;340:98:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;:101;;279:166;:::o;25:422::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\n\ncontract Allowlist {\n    // all are going to be set to uuid value in smart contract, so declare as same type\n\tstruct allowlister {\n\t\tstring f_name;\n\t\tstring l_name;\n\t\tstring wallet_address;\n\t}\n\n\tallowlister[] allowlisters; // array of all allowlisters\n\n\tfunction _createAllowlister (string memory _uuid) public {\n\t\tallowlisters.push(allowlister({\n\t\t\tf_name: _uuid,\n\t\t\tl_name: _uuid,\n\t\t\twallet_address: _uuid\n\t\t})) -1;\n\t}\n}",
+  "sourcePath": "/Users/ashleyhuynh/Documents/polygon-fauna-app/contracts/Allowlist.sol",
   "ast": {
-    "absolutePath": "project:/contracts/WhitelistForm.sol",
+    "absolutePath": "project:/contracts/Allowlist.sol",
     "exportedSymbols": {
-      "WhitelistForm": [
-        33
-      ]
+      "Allowlist": [30]
     },
-    "id": 34,
+    "id": 31,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 1,
-        "literals": [
-          "solidity",
-          "^",
-          "0.5",
-          ".0"
-        ],
+        "literals": ["solidity", "^", "0.5", ".0"],
         "nodeType": "PragmaDirective",
         "src": "0:23:0"
       },
@@ -51,24 +44,22 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 33,
-        "linearizedBaseContracts": [
-          33
-        ],
-        "name": "WhitelistForm",
+        "id": 30,
+        "linearizedBaseContracts": [30],
+        "name": "Allowlist",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "canonicalName": "WhitelistForm.whitelister",
-            "id": 10,
+            "canonicalName": "Allowlist.allowlister",
+            "id": 8,
             "members": [
               {
                 "constant": false,
                 "id": 3,
-                "name": "uuid",
+                "name": "f_name",
                 "nodeType": "VariableDeclaration",
-                "scope": 10,
-                "src": "162:11:0",
+                "scope": 8,
+                "src": "158:13:0",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -79,7 +70,7 @@
                   "id": 2,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
-                  "src": "162:6:0",
+                  "src": "158:6:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_string_storage_ptr",
                     "typeString": "string"
@@ -91,10 +82,10 @@
               {
                 "constant": false,
                 "id": 5,
-                "name": "f_name",
+                "name": "l_name",
                 "nodeType": "VariableDeclaration",
-                "scope": 10,
-                "src": "177:13:0",
+                "scope": 8,
+                "src": "175:13:0",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -105,7 +96,7 @@
                   "id": 4,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
-                  "src": "177:6:0",
+                  "src": "175:6:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_string_storage_ptr",
                     "typeString": "string"
@@ -117,10 +108,10 @@
               {
                 "constant": false,
                 "id": 7,
-                "name": "l_name",
+                "name": "wallet_address",
                 "nodeType": "VariableDeclaration",
-                "scope": 10,
-                "src": "194:13:0",
+                "scope": 8,
+                "src": "192:21:0",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -131,33 +122,7 @@
                   "id": 6,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
-                  "src": "194:6:0",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_string_storage_ptr",
-                    "typeString": "string"
-                  }
-                },
-                "value": null,
-                "visibility": "internal"
-              },
-              {
-                "constant": false,
-                "id": 9,
-                "name": "wallet_address",
-                "nodeType": "VariableDeclaration",
-                "scope": 10,
-                "src": "211:21:0",
-                "stateVariable": false,
-                "storageLocation": "default",
-                "typeDescriptions": {
-                  "typeIdentifier": "t_string_storage_ptr",
-                  "typeString": "string"
-                },
-                "typeName": {
-                  "id": 8,
-                  "name": "string",
-                  "nodeType": "ElementaryTypeName",
-                  "src": "211:6:0",
+                  "src": "192:6:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_string_storage_ptr",
                     "typeString": "string"
@@ -167,45 +132,45 @@
                 "visibility": "internal"
               }
             ],
-            "name": "whitelister",
+            "name": "allowlister",
             "nodeType": "StructDefinition",
-            "scope": 33,
-            "src": "139:97:0",
+            "scope": 30,
+            "src": "135:82:0",
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 13,
-            "name": "whitelisters",
+            "id": 11,
+            "name": "allowlisters",
             "nodeType": "VariableDeclaration",
-            "scope": 33,
-            "src": "239:26:0",
+            "scope": 30,
+            "src": "220:26:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_struct$_whitelister_$10_storage_$dyn_storage",
-              "typeString": "struct WhitelistForm.whitelister[]"
+              "typeIdentifier": "t_array$_t_struct$_allowlister_$8_storage_$dyn_storage",
+              "typeString": "struct Allowlist.allowlister[]"
             },
             "typeName": {
               "baseType": {
                 "contractScope": null,
-                "id": 11,
-                "name": "whitelister",
+                "id": 9,
+                "name": "allowlister",
                 "nodeType": "UserDefinedTypeName",
-                "referencedDeclaration": 10,
-                "src": "239:11:0",
+                "referencedDeclaration": 8,
+                "src": "220:11:0",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_whitelister_$10_storage_ptr",
-                  "typeString": "struct WhitelistForm.whitelister"
+                  "typeIdentifier": "t_struct$_allowlister_$8_storage_ptr",
+                  "typeString": "struct Allowlist.allowlister"
                 }
               },
-              "id": 12,
+              "id": 10,
               "length": null,
               "nodeType": "ArrayTypeName",
-              "src": "239:13:0",
+              "src": "220:13:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_struct$_whitelister_$10_storage_$dyn_storage_ptr",
-                "typeString": "struct WhitelistForm.whitelister[]"
+                "typeIdentifier": "t_array$_t_struct$_allowlister_$8_storage_$dyn_storage_ptr",
+                "typeString": "struct Allowlist.allowlister[]"
               }
             },
             "value": null,
@@ -213,9 +178,9 @@
           },
           {
             "body": {
-              "id": 31,
+              "id": 28,
               "nodeType": "Block",
-              "src": "355:125:0",
+              "src": "336:109:0",
               "statements": [
                 {
                   "expression": {
@@ -224,7 +189,7 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 29,
+                    "id": 26,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -237,51 +202,38 @@
                           "arguments": [
                             {
                               "argumentTypes": null,
+                              "id": 20,
+                              "name": "_uuid",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 13,
+                              "src": "383:5:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_string_memory_ptr",
+                                "typeString": "string memory"
+                              }
+                            },
+                            {
+                              "argumentTypes": null,
+                              "id": 21,
+                              "name": "_uuid",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 13,
+                              "src": "401:5:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_string_memory_ptr",
+                                "typeString": "string memory"
+                              }
+                            },
+                            {
+                              "argumentTypes": null,
                               "id": 22,
                               "name": "_uuid",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 15,
-                              "src": "400:5:0",
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_string_memory_ptr",
-                                "typeString": "string memory"
-                              }
-                            },
-                            {
-                              "argumentTypes": null,
-                              "id": 23,
-                              "name": "_uuid",
-                              "nodeType": "Identifier",
-                              "overloadedDeclarations": [],
-                              "referencedDeclaration": 15,
-                              "src": "418:5:0",
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_string_memory_ptr",
-                                "typeString": "string memory"
-                              }
-                            },
-                            {
-                              "argumentTypes": null,
-                              "id": 24,
-                              "name": "_uuid",
-                              "nodeType": "Identifier",
-                              "overloadedDeclarations": [],
-                              "referencedDeclaration": 15,
-                              "src": "436:5:0",
-                              "typeDescriptions": {
-                                "typeIdentifier": "t_string_memory_ptr",
-                                "typeString": "string memory"
-                              }
-                            },
-                            {
-                              "argumentTypes": null,
-                              "id": 25,
-                              "name": "_uuid",
-                              "nodeType": "Identifier",
-                              "overloadedDeclarations": [],
-                              "referencedDeclaration": 15,
-                              "src": "462:5:0",
+                              "referencedDeclaration": 13,
+                              "src": "427:5:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_string_memory_ptr",
                                 "typeString": "string memory"
@@ -301,64 +253,55 @@
                               {
                                 "typeIdentifier": "t_string_memory_ptr",
                                 "typeString": "string memory"
-                              },
-                              {
-                                "typeIdentifier": "t_string_memory_ptr",
-                                "typeString": "string memory"
                               }
                             ],
-                            "id": 21,
-                            "name": "whitelister",
+                            "id": 19,
+                            "name": "allowlister",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 10,
-                            "src": "377:11:0",
+                            "referencedDeclaration": 8,
+                            "src": "358:11:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_struct$_whitelister_$10_storage_ptr_$",
-                              "typeString": "type(struct WhitelistForm.whitelister storage pointer)"
+                              "typeIdentifier": "t_type$_t_struct$_allowlister_$8_storage_ptr_$",
+                              "typeString": "type(struct Allowlist.allowlister storage pointer)"
                             }
                           },
-                          "id": 26,
+                          "id": 23,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "kind": "structConstructorCall",
                           "lValueRequested": false,
-                          "names": [
-                            "uuid",
-                            "f_name",
-                            "l_name",
-                            "wallet_address"
-                          ],
+                          "names": ["f_name", "l_name", "wallet_address"],
                           "nodeType": "FunctionCall",
-                          "src": "377:95:0",
+                          "src": "358:79:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_whitelister_$10_memory",
-                            "typeString": "struct WhitelistForm.whitelister memory"
+                            "typeIdentifier": "t_struct$_allowlister_$8_memory",
+                            "typeString": "struct Allowlist.allowlister memory"
                           }
                         }
                       ],
                       "expression": {
                         "argumentTypes": [
                           {
-                            "typeIdentifier": "t_struct$_whitelister_$10_memory",
-                            "typeString": "struct WhitelistForm.whitelister memory"
+                            "typeIdentifier": "t_struct$_allowlister_$8_memory",
+                            "typeString": "struct Allowlist.allowlister memory"
                           }
                         ],
                         "expression": {
                           "argumentTypes": null,
-                          "id": 18,
-                          "name": "whitelisters",
+                          "id": 16,
+                          "name": "allowlisters",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 13,
-                          "src": "359:12:0",
+                          "referencedDeclaration": 11,
+                          "src": "340:12:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_array$_t_struct$_whitelister_$10_storage_$dyn_storage",
-                            "typeString": "struct WhitelistForm.whitelister storage ref[] storage ref"
+                            "typeIdentifier": "t_array$_t_struct$_allowlister_$8_storage_$dyn_storage",
+                            "typeString": "struct Allowlist.allowlister storage ref[] storage ref"
                           }
                         },
-                        "id": 20,
+                        "id": 18,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -366,13 +309,13 @@
                         "memberName": "push",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "359:17:0",
+                        "src": "340:17:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_whitelister_$10_storage_$returns$_t_uint256_$",
-                          "typeString": "function (struct WhitelistForm.whitelister storage ref) returns (uint256)"
+                          "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_allowlister_$8_storage_$returns$_t_uint256_$",
+                          "typeString": "function (struct Allowlist.allowlister storage ref) returns (uint256)"
                         }
                       },
-                      "id": 27,
+                      "id": 24,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -380,7 +323,7 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "359:114:0",
+                      "src": "340:98:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -391,14 +334,14 @@
                     "rightExpression": {
                       "argumentTypes": null,
                       "hexValue": "31",
-                      "id": 28,
+                      "id": 25,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "475:1:0",
+                      "src": "440:1:0",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_1_by_1",
@@ -406,36 +349,36 @@
                       },
                       "value": "1"
                     },
-                    "src": "359:117:0",
+                    "src": "340:101:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 30,
+                  "id": 27,
                   "nodeType": "ExpressionStatement",
-                  "src": "359:117:0"
+                  "src": "340:101:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 32,
+            "id": 29,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
-            "name": "_createWhitelister",
+            "name": "_createAllowlister",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 16,
+              "id": 14,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 15,
+                  "id": 13,
                   "name": "_uuid",
                   "nodeType": "VariableDeclaration",
-                  "scope": 32,
-                  "src": "327:19:0",
+                  "scope": 29,
+                  "src": "308:19:0",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -443,10 +386,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 14,
+                    "id": 12,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "327:6:0",
+                    "src": "308:6:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -456,45 +399,38 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "326:21:0"
+              "src": "307:21:0"
             },
             "returnParameters": {
-              "id": 17,
+              "id": 15,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "355:0:0"
+              "src": "336:0:0"
             },
-            "scope": 33,
-            "src": "298:182:0",
+            "scope": 30,
+            "src": "279:166:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 34,
-        "src": "25:457:0"
+        "scope": 31,
+        "src": "25:422:0"
       }
     ],
-    "src": "0:482:0"
+    "src": "0:447:0"
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "project:/contracts/WhitelistForm.sol",
+      "absolutePath": "project:/contracts/Allowlist.sol",
       "exportedSymbols": {
-        "WhitelistForm": [
-          33
-        ]
+        "Allowlist": [30]
       }
     },
     "children": [
       {
         "attributes": {
-          "literals": [
-            "solidity",
-            "^",
-            "0.5",
-            ".0"
-          ]
+          "literals": ["solidity", "^", "0.5", ".0"]
         },
         "id": 1,
         "name": "PragmaDirective",
@@ -502,35 +438,29 @@
       },
       {
         "attributes": {
-          "baseContracts": [
-            null
-          ],
-          "contractDependencies": [
-            null
-          ],
+          "baseContracts": [null],
+          "contractDependencies": [null],
           "contractKind": "contract",
           "documentation": null,
           "fullyImplemented": true,
-          "linearizedBaseContracts": [
-            33
-          ],
-          "name": "WhitelistForm",
-          "scope": 34
+          "linearizedBaseContracts": [30],
+          "name": "Allowlist",
+          "scope": 31
         },
         "children": [
           {
             "attributes": {
-              "canonicalName": "WhitelistForm.whitelister",
-              "name": "whitelister",
-              "scope": 33,
+              "canonicalName": "Allowlist.allowlister",
+              "name": "allowlister",
+              "scope": 30,
               "visibility": "public"
             },
             "children": [
               {
                 "attributes": {
                   "constant": false,
-                  "name": "uuid",
-                  "scope": 10,
+                  "name": "f_name",
+                  "scope": 8,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "string",
@@ -545,18 +475,18 @@
                     },
                     "id": 2,
                     "name": "ElementaryTypeName",
-                    "src": "162:6:0"
+                    "src": "158:6:0"
                   }
                 ],
                 "id": 3,
                 "name": "VariableDeclaration",
-                "src": "162:11:0"
+                "src": "158:13:0"
               },
               {
                 "attributes": {
                   "constant": false,
-                  "name": "f_name",
-                  "scope": 10,
+                  "name": "l_name",
+                  "scope": 8,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "string",
@@ -571,18 +501,18 @@
                     },
                     "id": 4,
                     "name": "ElementaryTypeName",
-                    "src": "177:6:0"
+                    "src": "175:6:0"
                   }
                 ],
                 "id": 5,
                 "name": "VariableDeclaration",
-                "src": "177:13:0"
+                "src": "175:13:0"
               },
               {
                 "attributes": {
                   "constant": false,
-                  "name": "l_name",
-                  "scope": 10,
+                  "name": "wallet_address",
+                  "scope": 8,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "string",
@@ -597,52 +527,26 @@
                     },
                     "id": 6,
                     "name": "ElementaryTypeName",
-                    "src": "194:6:0"
+                    "src": "192:6:0"
                   }
                 ],
                 "id": 7,
                 "name": "VariableDeclaration",
-                "src": "194:13:0"
-              },
-              {
-                "attributes": {
-                  "constant": false,
-                  "name": "wallet_address",
-                  "scope": 10,
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "type": "string",
-                  "value": null,
-                  "visibility": "internal"
-                },
-                "children": [
-                  {
-                    "attributes": {
-                      "name": "string",
-                      "type": "string"
-                    },
-                    "id": 8,
-                    "name": "ElementaryTypeName",
-                    "src": "211:6:0"
-                  }
-                ],
-                "id": 9,
-                "name": "VariableDeclaration",
-                "src": "211:21:0"
+                "src": "192:21:0"
               }
             ],
-            "id": 10,
+            "id": 8,
             "name": "StructDefinition",
-            "src": "139:97:0"
+            "src": "135:82:0"
           },
           {
             "attributes": {
               "constant": false,
-              "name": "whitelisters",
-              "scope": 33,
+              "name": "allowlisters",
+              "scope": 30,
               "stateVariable": true,
               "storageLocation": "default",
-              "type": "struct WhitelistForm.whitelister[]",
+              "type": "struct Allowlist.allowlister[]",
               "value": null,
               "visibility": "internal"
             },
@@ -650,29 +554,29 @@
               {
                 "attributes": {
                   "length": null,
-                  "type": "struct WhitelistForm.whitelister[]"
+                  "type": "struct Allowlist.allowlister[]"
                 },
                 "children": [
                   {
                     "attributes": {
                       "contractScope": null,
-                      "name": "whitelister",
-                      "referencedDeclaration": 10,
-                      "type": "struct WhitelistForm.whitelister"
+                      "name": "allowlister",
+                      "referencedDeclaration": 8,
+                      "type": "struct Allowlist.allowlister"
                     },
-                    "id": 11,
+                    "id": 9,
                     "name": "UserDefinedTypeName",
-                    "src": "239:11:0"
+                    "src": "220:11:0"
                   }
                 ],
-                "id": 12,
+                "id": 10,
                 "name": "ArrayTypeName",
-                "src": "239:13:0"
+                "src": "220:13:0"
               }
             ],
-            "id": 13,
+            "id": 11,
             "name": "VariableDeclaration",
-            "src": "239:26:0"
+            "src": "220:26:0"
           },
           {
             "attributes": {
@@ -680,11 +584,9 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
-              "name": "_createWhitelister",
-              "scope": 33,
+              "modifiers": [null],
+              "name": "_createAllowlister",
+              "scope": 30,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
@@ -696,7 +598,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "_uuid",
-                      "scope": 32,
+                      "scope": 29,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "string",
@@ -709,30 +611,28 @@
                           "name": "string",
                           "type": "string"
                         },
-                        "id": 14,
+                        "id": 12,
                         "name": "ElementaryTypeName",
-                        "src": "327:6:0"
+                        "src": "308:6:0"
                       }
                     ],
-                    "id": 15,
+                    "id": 13,
                     "name": "VariableDeclaration",
-                    "src": "327:19:0"
+                    "src": "308:19:0"
                   }
                 ],
-                "id": 16,
+                "id": 14,
                 "name": "ParameterList",
-                "src": "326:21:0"
+                "src": "307:21:0"
               },
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
-                "id": 17,
+                "id": 15,
                 "name": "ParameterList",
-                "src": "355:0:0"
+                "src": "336:0:0"
               },
               {
                 "children": [
@@ -761,9 +661,7 @@
                               "isPure": false,
                               "isStructConstructorCall": false,
                               "lValueRequested": false,
-                              "names": [
-                                null
-                              ],
+                              "names": [null],
                               "type": "uint256",
                               "type_conversion": false
                             },
@@ -772,8 +670,8 @@
                                 "attributes": {
                                   "argumentTypes": [
                                     {
-                                      "typeIdentifier": "t_struct$_whitelister_$10_memory",
-                                      "typeString": "struct WhitelistForm.whitelister memory"
+                                      "typeIdentifier": "t_struct$_allowlister_$8_memory",
+                                      "typeString": "struct Allowlist.allowlister memory"
                                     }
                                   ],
                                   "isConstant": false,
@@ -782,27 +680,25 @@
                                   "lValueRequested": false,
                                   "member_name": "push",
                                   "referencedDeclaration": null,
-                                  "type": "function (struct WhitelistForm.whitelister storage ref) returns (uint256)"
+                                  "type": "function (struct Allowlist.allowlister storage ref) returns (uint256)"
                                 },
                                 "children": [
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
-                                      "referencedDeclaration": 13,
-                                      "type": "struct WhitelistForm.whitelister storage ref[] storage ref",
-                                      "value": "whitelisters"
+                                      "overloadedDeclarations": [null],
+                                      "referencedDeclaration": 11,
+                                      "type": "struct Allowlist.allowlister storage ref[] storage ref",
+                                      "value": "allowlisters"
                                     },
-                                    "id": 18,
+                                    "id": 16,
                                     "name": "Identifier",
-                                    "src": "359:12:0"
+                                    "src": "340:12:0"
                                   }
                                 ],
-                                "id": 20,
+                                "id": 18,
                                 "name": "MemberAccess",
-                                "src": "359:17:0"
+                                "src": "340:17:0"
                               },
                               {
                                 "attributes": {
@@ -813,12 +709,11 @@
                                   "isStructConstructorCall": true,
                                   "lValueRequested": false,
                                   "names": [
-                                    "uuid",
                                     "f_name",
                                     "l_name",
                                     "wallet_address"
                                   ],
-                                  "type": "struct WhitelistForm.whitelister memory",
+                                  "type": "struct Allowlist.allowlister memory",
                                   "type_conversion": false
                                 },
                                 "children": [
@@ -836,88 +731,62 @@
                                         {
                                           "typeIdentifier": "t_string_memory_ptr",
                                           "typeString": "string memory"
-                                        },
-                                        {
-                                          "typeIdentifier": "t_string_memory_ptr",
-                                          "typeString": "string memory"
                                         }
                                       ],
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
-                                      "referencedDeclaration": 10,
-                                      "type": "type(struct WhitelistForm.whitelister storage pointer)",
-                                      "value": "whitelister"
+                                      "overloadedDeclarations": [null],
+                                      "referencedDeclaration": 8,
+                                      "type": "type(struct Allowlist.allowlister storage pointer)",
+                                      "value": "allowlister"
                                     },
-                                    "id": 21,
+                                    "id": 19,
                                     "name": "Identifier",
-                                    "src": "377:11:0"
+                                    "src": "358:11:0"
                                   },
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
-                                      "referencedDeclaration": 15,
+                                      "overloadedDeclarations": [null],
+                                      "referencedDeclaration": 13,
+                                      "type": "string memory",
+                                      "value": "_uuid"
+                                    },
+                                    "id": 20,
+                                    "name": "Identifier",
+                                    "src": "383:5:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [null],
+                                      "referencedDeclaration": 13,
+                                      "type": "string memory",
+                                      "value": "_uuid"
+                                    },
+                                    "id": 21,
+                                    "name": "Identifier",
+                                    "src": "401:5:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [null],
+                                      "referencedDeclaration": 13,
                                       "type": "string memory",
                                       "value": "_uuid"
                                     },
                                     "id": 22,
                                     "name": "Identifier",
-                                    "src": "400:5:0"
-                                  },
-                                  {
-                                    "attributes": {
-                                      "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
-                                      "referencedDeclaration": 15,
-                                      "type": "string memory",
-                                      "value": "_uuid"
-                                    },
-                                    "id": 23,
-                                    "name": "Identifier",
-                                    "src": "418:5:0"
-                                  },
-                                  {
-                                    "attributes": {
-                                      "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
-                                      "referencedDeclaration": 15,
-                                      "type": "string memory",
-                                      "value": "_uuid"
-                                    },
-                                    "id": 24,
-                                    "name": "Identifier",
-                                    "src": "436:5:0"
-                                  },
-                                  {
-                                    "attributes": {
-                                      "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
-                                      "referencedDeclaration": 15,
-                                      "type": "string memory",
-                                      "value": "_uuid"
-                                    },
-                                    "id": 25,
-                                    "name": "Identifier",
-                                    "src": "462:5:0"
+                                    "src": "427:5:0"
                                   }
                                 ],
-                                "id": 26,
+                                "id": 23,
                                 "name": "FunctionCall",
-                                "src": "377:95:0"
+                                "src": "358:79:0"
                               }
                             ],
-                            "id": 27,
+                            "id": 24,
                             "name": "FunctionCall",
-                            "src": "359:114:0"
+                            "src": "340:98:0"
                           },
                           {
                             "attributes": {
@@ -932,39 +801,39 @@
                               "type": "int_const 1",
                               "value": "1"
                             },
-                            "id": 28,
+                            "id": 25,
                             "name": "Literal",
-                            "src": "475:1:0"
+                            "src": "440:1:0"
                           }
                         ],
-                        "id": 29,
+                        "id": 26,
                         "name": "BinaryOperation",
-                        "src": "359:117:0"
+                        "src": "340:101:0"
                       }
                     ],
-                    "id": 30,
+                    "id": 27,
                     "name": "ExpressionStatement",
-                    "src": "359:117:0"
+                    "src": "340:101:0"
                   }
                 ],
-                "id": 31,
+                "id": 28,
                 "name": "Block",
-                "src": "355:125:0"
+                "src": "336:109:0"
               }
             ],
-            "id": 32,
+            "id": 29,
             "name": "FunctionDefinition",
-            "src": "298:182:0"
+            "src": "279:166:0"
           }
         ],
-        "id": 33,
+        "id": 30,
         "name": "ContractDefinition",
-        "src": "25:457:0"
+        "src": "25:422:0"
       }
     ],
-    "id": 34,
+    "id": 31,
     "name": "SourceUnit",
-    "src": "0:482:0"
+    "src": "0:447:0"
   },
   "compiler": {
     "name": "solc",
@@ -974,12 +843,12 @@
     "80001": {
       "events": {},
       "links": {},
-      "address": "0xA656F7Ec7953F6D51D7244b658D30e27d87a0a78",
-      "transactionHash": "0x9ac90b5b1acce68f86d6b8022c993575612cb6ec7262cd125503b4a09de81134"
+      "address": "0xC38D67Abd1f2979500302b90eB4A29a716b65789",
+      "transactionHash": "0xa2dc4ec2b063ebbcd8302716d8c2bcb6db8acfd25fe68bd5c9597d759948770a"
     }
   },
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-19T01:25:36.161Z",
+  "updatedAt": "2022-01-22T23:02:48.723Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

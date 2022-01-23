@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import WhitelistFormContract from "./contracts/WhitelistForm.json";
+import AllowlistContract from "./contracts/Allowlist.json";
 import getWeb3 from "./getWeb3";
-import WhitelistForm from "./components/WhitelistForm";
+import AllowlistForm from "./components/AllowlistForm";
 
 import "./App.css";
 
@@ -18,10 +18,10 @@ class App extends Component {
 
       // Get the contract instance.
       const networkId = await web3.eth.net.getId();
-      const deployedNetwork = WhitelistFormContract.networks[networkId];
+      const deployedNetwork = AllowlistContract.networks[networkId];
       const instance = new web3.eth.Contract(
-        WhitelistFormContract.abi,
-        deployedNetwork && deployedNetwork.address,
+        AllowlistContract.abi,
+        deployedNetwork && deployedNetwork.address
       );
 
       // Set web3, accounts, and contract to the state, and then proceed with an
@@ -30,7 +30,7 @@ class App extends Component {
     } catch (error) {
       // Catch any errors for any of the above operations.
       alert(
-        `Failed to load web3, accounts, or contract. Check console for details.`,
+        `Failed to load web3, accounts, or contract. Check console for details.`
       );
       console.error(error);
     }
@@ -42,7 +42,10 @@ class App extends Component {
     }
     return (
       <div className="App">
-        <WhitelistForm contract={this.state.contract} accounts={this.state.accounts} web3={this.state.web3} />
+        <AllowlistForm
+          contract={this.state.contract}
+          accounts={this.state.accounts}
+        />
       </div>
     );
   }

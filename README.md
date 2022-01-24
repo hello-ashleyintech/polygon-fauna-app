@@ -42,3 +42,10 @@ Once you make a Collection, you'll need an [Index](https://docs.fauna.com/fauna/
 In `fauna.js`, you'll need to:
 * In the function `addDocuments`, update the `"allowlist_members"` string in the query to the name of your newly created Collection.
 * In the function `findUUID`, update the `"allowlist_members_by_uuid"` string in the query to the name of your newly created Index.
+
+## Transaction lookup
+Included in this repository is a script to decode transaction input data, which can be used to find `uuid`s store in the blockchain and to search the corresponding `uuid` record in Fauna. 
+
+The script is located in `client/scripts/decode-transaction.js`. In the file, you will need to set `testData` equal to the transaction input data hash you'd like to decode. To run the script, you can run this command from the `client` folder:
+`node scripts/decode-transaction.js`
+This script can be repurposed to also read transaction data not related to the `Allowlist` smart contract it's currently referencing. You will need to replace the `testABI` variable value with the new contract ABI to be able to read from a different smart contract.

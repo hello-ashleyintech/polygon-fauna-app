@@ -44,7 +44,7 @@ In `fauna.js`, you'll need to:
 * In the function `findUUID`, update the `"allowlist_members_by_uuid"` string in the query to the name of your newly created Index.
 
 ## Transaction lookup
-Included in this repository is a script to decode transaction input data, which can be used to find `uuid`s store in the blockchain and to search the corresponding `uuid` record in Fauna. 
+Included in this repository is a script to decode transaction input data, which can be used to find the `uuid`s stored in the blockchain for transactions from this application. With a `uuid`, you can search for the corresponding data record in Fauna to reveal the actual information (first name, last name, wallet address). 
 
 The script is located in `client/scripts/decode-transaction.js`. In the file, you will need to set `testData` equal to the transaction input data hash you'd like to decode. To run the script, you can run this command from the `client` folder:
 `node scripts/decode-transaction.js`

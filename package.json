@@ -1,0 +1,24 @@
+{
+  "name": "polygon-fauna-app",
+  "version": "1.0.0",
+  "description": "👋 Hello! This app is a demo app to show how Polygon, Fauna, and React can work together to help safeguard your dApp data.",
+  "main": "truffle-config.js",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.0.10",
+    "dotenv": "^16.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "migrate": "truffle migrate --network matic --reset"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hello-ashleyintech/polygon-fauna-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hello-ashleyintech/polygon-fauna-app/issues"
+  },
+  "homepage": "https://github.com/hello-ashleyintech/polygon-fauna-app#readme"
+}

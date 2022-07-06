@@ -20,7 +20,7 @@ Once your `.env` is set up, install dependencies. You'll need to do the followin
 
 ## Migrate smart contracts
 Once you have the dependencies installed, we'll need to migrate our smart contracts to get them set up on our machine.
-* In the root directory, run `truffle migrate --network matic --reset` to deploy the smart contracts.
+* In the root directory, run `npm run migrate` to deploy the smart contracts.
 
 ### Note: if you run into any issues, check the following things:
 * Make sure your `MNEMONIC` environment variable is defined in a `.env` file in your root directory.

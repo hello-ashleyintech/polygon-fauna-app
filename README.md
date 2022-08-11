@@ -1,5 +1,15 @@
 # polygon-fauna-app
-👋 Hello! This app is a demo app to show how Polygon, Fauna, and React can work together to help safeguard your dApp data.
+👋 Hello! This app is a demo app to show how Polygon, Fauna, and React can work together to help safeguard your dApp data. This example uses the concept of Allowlisting to demonstrate this functionality in a dApp.
+
+View the flow of the app in the diagram below:
+
+<img width="422" alt="New Database" src="https://docs.polygon.technology/assets/images/flow-eea5375e3494321f93be59658f537786.png">
+
+This is what the app looks like in action:
+
+<img width="422" alt="New Database" src="https://docs.polygon.technology/assets/images/polygon-fauna-app-cebad379be3e0f4234e2f5a2681f5ebe.gif">
+
+Visit [here](https://docs.polygon.technology/docs/develop/dapp-fauna-polygon-react/) for the tutorial on Polygon's docs that this repo is linked to.
 
 ## Getting started
 To start, clone this repository locally onto your machine or download it as a .ZIP file.
